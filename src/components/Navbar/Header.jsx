@@ -1,7 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './../images/logo-no-background.png'
+import logo from './../../images/logo-no-background.png'
+import './Header.css'
+import '../../assets/assets'
+import { assets } from '../../assets/assets';
+
 
 const Header = () => {
   return (
@@ -16,12 +20,18 @@ const Header = () => {
             <Nav.Link href="/Contact" className="mx-3">Contact</Nav.Link>
           </Nav>
           <Nav.Link href='/SignUp' className="d-lg-none" style={{marginLeft:'37%'}}>
-            <Button >Sign Up</Button>
+            <Button  className='bg-warning border-0' >Sign Up</Button>
           </Nav.Link>
         </Navbar.Collapse>
+       
         <Nav.Link href='/SignUp' className="d-none d-lg-flex" style={{marginLeft:'25%'}}>
+          <div className='navbar-search-icon'>
+            <img src={assets.basket_icon} alt="" />
+            <div className="dot"></div>
+        </div>
           <Button  className='bg-warning border-0 px-4 mx-4 fw-semibold text-black' style={{fontSize:'18px'}}>Sign Up</Button>
         </Nav.Link>
+       
     </Navbar>
   );
 }
