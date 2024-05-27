@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Header from './components/Navbar/Header'
 import Cart from './pages/Cart/Cart'
+import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 
 export default function App() {
   const [showLogin,setShowLogin] = useState(false)
@@ -24,6 +25,7 @@ export default function App() {
          <Route path='/About' element={<About/>}/>
          <Route path='/Contact' element={<Contact/>}/>
          <Route path='/Cart' element={<Cart/>}/>
+         <Route path='/Order' element={<PlaceOrder/>}/>
          {/* <Route path='/SignUp' element={<SignUp/>}/> */}
        </Routes>
        <Footer/>

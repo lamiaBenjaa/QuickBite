@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './../../images/logo-no-background.png'
@@ -7,10 +7,12 @@ import '../../assets/assets'
 import { assets } from '../../assets/assets';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../context/StoreContext';
 
 
 
 const Header = ({setShowLogin}) => {
+  const {getTotalCartAmount} = useContext(StoreContext)
   return (
     <Navbar collapseOnSelect expand="lg"  className='px-5' style={{boxShadow:'2px 2px 4px rgba(0, 0, 0, 0.2)'}}>
         <Link to="/"><Navbar.Brand><img src={logo} alt="" style={{width:'150px'}}/></Navbar.Brand></Link>
@@ -30,7 +32,7 @@ const Header = ({setShowLogin}) => {
         <Nav.Link className="d-none d-lg-flex" style={{marginLeft:'25%'}}>
           <div className='navbar-search-icon'>
              <Link to='/Cart'><img src={assets.basket_icon} alt="" /></Link>
-            <div className="dot"></div>
+            <div className={getTotalCartAmount()===0?"":"dot"}></div>
         </div>
           <Button onClick={()=>setShowLogin(true)}  className='bg-warning border-0 px-4 mx-4 fw-semibold text-black' style={{fontSize:'18px'}}>Sign Up</Button>
         </Nav.Link>
