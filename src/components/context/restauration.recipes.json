@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "663fb996479cb3ab26de5598"
+  },
+  "title": "Tofu Wings",
+  "description": "Chiken wings ,Tofu,Buffalo sauce",
+  "price": 8.5,
+  "categorie": "appertizers",
+  "image": "1715452310515.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fba0e479cb3ab26de559a"
+  },
+  "title": "Cheesy Noodles ",
+  "description": "Rice Noodles ,mozzarella and Parmesan Cheese , Shrimps ,seasoning",
+  "price": 12.5,
+  "categorie": "maincours",
+  "image": "1715452430553.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fba51479cb3ab26de559c"
+  },
+  "title": "Garlic pasta",
+  "description": "Pasta , Garlic , Basil , Tomato ,Olive Oil ,Feta cheese",
+  "price": 11.5,
+  "categorie": "maincours",
+  "image": "1715452497078.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbaac479cb3ab26de559e"
+  },
+  "title": "Raspberry Cheesecake",
+  "description": "Chocolate , Raspberry , Cream Cheese",
+  "price": 9.99,
+  "categorie": "deserts",
+  "image": "1715452588617.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbaf2479cb3ab26de55a0"
+  },
+  "title": "Chiken Salad",
+  "description": "Chiken , Pesto , Tomato , Burrata , Feta Cheese",
+  "price": 10.99,
+  "categorie": "salad",
+  "image": "1715452658249.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbb37479cb3ab26de55a2"
+  },
+  "title": "Strawberry Lemonade",
+  "description": "Strawberry , Basil , Lemonade",
+  "price": 5.99,
+  "categorie": "drinks",
+  "image": "1715452727251.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbb8a479cb3ab26de55a4"
+  },
+  "title": "chicken sandwich",
+  "description": "chicken ,spicy mayo ,Buttermilk ,soft white Bread",
+  "price": 7.99,
+  "categorie": "sandwich",
+  "image": "1715452810253.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbbc0479cb3ab26de55a6"
+  },
+  "title": "Meat Sandwish",
+  "description": "Meat , Garlic , Sweet onion, Mayonnaise",
+  "price": 10.5,
+  "categorie": "sandwich",
+  "image": "1715452864306.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbc16479cb3ab26de55a8"
+  },
+  "title": "chicken fettuccine",
+  "description": "Chicken breasts, Garlic, Eggs, Fettuccine, Italian seasoning, Butter, Heavy cream, Parmesan",
+  "price": 14.5,
+  "categorie": "maincours",
+  "image": "1715452950373.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbc5a479cb3ab26de55aa"
+  },
+  "title": "chicken shawarma",
+  "description": "Chicken thigh, fillets, Garlic, Lettuce, Red onion, Tomatoes, Mayonnaise, Sriracha sauce, Pita bread, Yogurt",
+  "price": 15.5,
+  "categorie": "sandwich",
+  "image": "1715453018754.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbc98479cb3ab26de55ac"
+  },
+  "title": "pasta salad",
+  "description": "Salami, Basil, Garlic, Parsley, Dijon mustard,  Italian seasoning, Mozzarella",
+  "price": 13.99,
+  "categorie": "salad",
+  "image": "1715453080084.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbcc9479cb3ab26de55ae"
+  },
+  "title": "Greek salad",
+  "description": "Avocado, Cherry tomatoes, cucumber, Oregano, Red onion, Kalamata olives, Lemon juice",
+  "price": 13,
+  "categorie": "salad",
+  "image": "1715453129189.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbd0a479cb3ab26de55b0"
+  },
+  "title": "Nutella crepes",
+  "description": "Bananas, Eggs, Flour, Nutella and powdered sugar, Sugar, Vanilla ,Mil",
+  "price": 9,
+  "categorie": "deserts",
+  "image": "1715453194666.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbd3d479cb3ab26de55b2"
+  },
+  "title": "kunafa rolls",
+  "description": "Lemon juice, Granulated sugar, Pistachios, ricotta cheese, FRESH kunafa ",
+  "price": 12,
+  "categorie": "deserts",
+  "image": "1715453245564.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbd7f479cb3ab26de55b4"
+  },
+  "title": "Caramel  Coffee",
+  "description": "Coffee, Milk, Caramel, sugar",
+  "price": 6.5,
+  "categorie": "drinks",
+  "image": "1715453311169.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663fbdb2479cb3ab26de55b6"
+  },
+  "title": "Banana Smoothie",
+  "description": "Milk, Banana, sugar,Pistachio",
+  "price": 8,
+  "categorie": "drinks",
+  "image": "1715453362326.jpeg",
+  "__v": 0
+}]

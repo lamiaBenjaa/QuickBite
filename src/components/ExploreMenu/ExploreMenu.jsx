@@ -30,9 +30,6 @@ function ExploreMenu({categorie ,setCategorie}) {
                         </div>
                         
                     </div>
-                   
-                        
-                    
                     
                     </>
                 ))}
