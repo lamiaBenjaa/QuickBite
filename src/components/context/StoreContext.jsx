@@ -5,10 +5,12 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({})
     const [recipes, setRecipes] = useState([]);
+    const url = "http://localhost:5000" 
+    const [token, setToken] = useState("")
 
     useEffect(() => {
         const fetchData = async () => {
-            const resp = await axios.get(' http://localhost:5000/recipe/get');
+            const resp = await axios.get('http://localhost:5000/api/recipe/get');
             console.log(resp.data);
             setRecipes(resp.data);
         };
@@ -16,7 +18,7 @@ const StoreContextProvider = (props) => {
         fetchData();
     }, []);
 
-    const addToCart = (itemId) => {
+    const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
             setCartItems((prev) => ({ ...prev, [itemId]: 1 }))
 
@@ -24,9 +26,15 @@ const StoreContextProvider = (props) => {
         else {
             setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
         }
+        if (token) {
+            await axios.post("http://localhost:5000/api/cart/add", { itemId }, { headers: { token } })
+        }
     }
-    const removeFromCart = (itemId) => {
+    const removeFromCart = async (itemId) => {
         setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
+        if (token) {
+            await axios.post("http://localhost:5000/api/cart/remove", { itemId }, { headers: { token } })
+        }
     }
 
     const getTotalCartAmount = () => {
@@ -35,10 +43,25 @@ const StoreContextProvider = (props) => {
             if (cartItems[item] > 0) {
                 let itemInfo = recipes.find((product) => product._id === item)
                 totalAmount += itemInfo.price * cartItems[item]
-            }
 
+            }
         }
         return totalAmount
+    }
+
+    useEffect(() => {
+        async function loadData() {
+            if (localStorage.getItem("token")) {
+                setToken(localStorage.getItem("token"))
+                await loadCartData(localStorage.getItem("token"))
+            }
+        }
+        loadData()
+    }, [])
+
+    const loadCartData = async (token) => {
+        const response = await axios.post("http://localhost:5000/api/cart/get", {}, { headers: { token } })
+        setCartItems(response.data.cartData)
     }
 
     const contextValue = {
@@ -47,7 +70,10 @@ const StoreContextProvider = (props) => {
         setCartItems,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        token,
+        setToken,
+        url
 
     }
     return (

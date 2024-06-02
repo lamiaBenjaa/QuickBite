@@ -11,7 +11,7 @@ export const FoodDisplay = ({categorie}) => {
 
     useEffect(() => {
         const fetchData = async () => {
-                const resp = await axios.get(' http://localhost:5000/recipe/get');
+                const resp = await axios.get('http://localhost:5000/api/recipe/get');
                 console.log(resp.data);
                 setRecipes(resp.data);
         };

@@ -12,6 +12,8 @@ import LoginPopup from './components/LoginPopup/LoginPopup'
 import Header from './components/Navbar/Header'
 import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
+import Verify from './pages/verify/Verify'
+import MyOrders from './pages/MyOrders/MyOrders'
 
 export default function App() {
   const [showLogin,setShowLogin] = useState(false)
@@ -26,6 +28,8 @@ export default function App() {
          <Route path='/Contact' element={<Contact/>}/>
          <Route path='/Cart' element={<Cart/>}/>
          <Route path='/Order' element={<PlaceOrder/>}/>
+         <Route path='/verify' element={<Verify/>}/>
+         <Route path='/myorders' element={<MyOrders/>}/>
          {/* <Route path='/SignUp' element={<SignUp/>}/> */}
        </Routes>
        <Footer/>
