@@ -31,7 +31,7 @@ const MyOrders = () => {
                             <img src={assets.parcel_icon} alt="" />
                             <p>{order.items.map((item,index)=>{
                                 if (index===order.items.length-1){
-                                    return item.title+"x"+item.quantity 
+                                    return item.title+" x "+item.quantity 
                                 }
                                 else{
                                     return item.title+"x"+item.quantity+","
