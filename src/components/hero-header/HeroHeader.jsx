@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     
        
    
-    <div className='container'>
+    <div className='container1'>
         <div className='hero-text'>
             <h2>Food you love Delivered to you</h2>
             <p>Indulge with our mouthwatering dishes made with 

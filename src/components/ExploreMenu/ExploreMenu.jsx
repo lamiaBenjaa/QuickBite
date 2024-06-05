@@ -18,8 +18,10 @@ function ExploreMenu({categorie ,setCategorie}) {
 
     return (
         <div className='explore-menu'>
-            <h1>Explore our Menu</h1>
-            <p className='explore-menu-text'>Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
+            <div className='row p-5'>
+            <h1 className='col-4'>Explore our Menu</h1>
+            <p className='explore-menu-text col-8'>Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
+            </div>
             <div className="explore-menu-list">
                 {categories.map((item, index) => (
                     <>

@@ -25,10 +25,10 @@ const Header = ({setShowLogin}) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto my-4 my-md-1  fs-5 fw-semibold" style={{marginLeft:'35%'}}>
-            <Link to='/'><Nav.Link href="/" className="mx-3">Home</Nav.Link></Link>
-            <a href="#explore-menu" className='link'><Nav.Link href="/Menu" className="mx-3">Menu</Nav.Link></a>
-            <a href="app-download"><Nav.Link href="/About" className="mx-3" >App</Nav.Link></a>
-            <a href="#footer"><Nav.Link href="/Contact" className="mx-3">Contact</Nav.Link></a>
+            <Nav.Link href="/" className="mx-4">Home</Nav.Link>
+            <Nav.Link href="/Menu" className="mx-4">Menu</Nav.Link>
+            <Nav.Link href="/About" className="mx-4" >App</Nav.Link>
+            <Nav.Link href="/Contact" className="mx-4">Contact</Nav.Link>
           </Nav>
           <Nav.Link  className="d-lg-none" style={{marginLeft:'37%'}}>
             <Button  className='bg-warning border-0' >Sign Up</Button>
