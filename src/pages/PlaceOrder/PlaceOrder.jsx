@@ -108,8 +108,6 @@ function PlaceOrder() {
           </div>
         </div>
       </form>
-   
-
   )
 }
 
